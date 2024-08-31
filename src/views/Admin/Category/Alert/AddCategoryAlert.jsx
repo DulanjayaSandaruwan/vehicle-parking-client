@@ -39,6 +39,7 @@ const AddCategoryAlert = ({ open, close, data }) => {
                 await updateVehicleCategory(formData)
                     .then(response => {
                         console.log(response)
+                        window.location.reload()
                     })
                     .catch((error) => {
                         console.log(error)
@@ -53,6 +54,7 @@ const AddCategoryAlert = ({ open, close, data }) => {
                 await addVehicleCategory(formData)
                     .then(response => {
                         console.log(response)
+                        window.location.reload()
                     })
                     .catch((error) => {
                         console.log(error)

@@ -35,7 +35,7 @@ const BookParking = () => {
         <div className='flex justify-center' id="book-parking">
             <div className='flex flex-col gap-4 w-4/5 bg-white rounded-md p-10 shadow-xl' style={{ backgroundImage: `url(${BookCarBg})` }}>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-5">
-                    <Select label="Select vehicle category" onChange={(e) => handleChange('vehicleCategoryId', e)} value={formData.vehicleCategoryId}>
+                    <Select label="Select vehicle category" onChange={(e) => handleChange('vehicleCategoryId', e)}>
                         {
                             Object(categoryList)?.map((category) => (
                                 <Option value={category.id} selected>{category.categoryName}</Option>

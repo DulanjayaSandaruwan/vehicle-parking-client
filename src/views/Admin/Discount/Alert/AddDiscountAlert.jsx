@@ -58,6 +58,7 @@ const AddDiscountAlert = ({ open, close, data }) => {
                     .then(response => {
                         console.log(response)
                         notify('Successfully add discount', 'success')
+                        window.location.reload()
                     })
                     .catch((error) => {
                         console.log(error)
